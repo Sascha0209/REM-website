@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REM - Meine Liegenschaft</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #1c1c1e;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            background-color: #007aff;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .sidebar {
+            background-color: #007aff;
+            padding: 20px;
+            width: 250px;
+            color: white;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+        .content h1 {
+            font-size: 24px;
+        }
+        .content .info, .content .report {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #1c1c1e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="REM Logo">
+        <div>👤</div>
+    </header>
+    <nav>
+        <a href="#">Startseite</a>
+        <a href="#">Einstellungen</a>
+    </nav>
+    <div class="container">
+        <div class="sidebar">
+            <a href="#">Neuigkeiten</a>
+            <a href="#">Anfrage erstellen</a>
+            <a href="#">Meine Tickets</a>
+            <a href="#">Dokumente</a>
+            <a href="#">Kalender</a>
+            <a href="#">Ansprechpartner</a>
+        </div>
+        <div class="content">
+            <h1>Meine Liegenschaft</h1>
+            <div class="info">
+                <img src="property.jpg" alt="Liegenschaft">
+                <p>WEG Musterstraße 1</p>
+                <p>55122 Mainz</p>
+            </div>
+            <div class="report">
+                <h2>Wochenreport</h2>
+                <img src="report_chart.png" alt="Wochenreport">
+                <img src="calendar.png" alt="Kalender">
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 REM
+    </footer>
+</body>
+</html>
